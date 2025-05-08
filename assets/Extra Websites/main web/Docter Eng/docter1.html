@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        /* Home Button Styling */
+        .home {
+            background: url() no-repeat center center;
+            background-size: 80px;
+            display: inline-block;
+            text-align: center;
+            width: 150px;
+            height: 80px;
+            line-height: 80px;
+            border: 1px solid #ccc;
+            border-radius: 20px;
+            font-size: 18px;
+            color: rgb(100, 68, 68);
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .home:hover {
+            filter: invert(75%);
+            transform: scale(1.05);
+            border-color: #0f6ec7;
+        }
+
+        /* Gallery Title Styling */
+        .gallery {
+            font-size: 36px;
+            font-weight: bold;
+            text-align: center;
+            margin-top: 20px;
+            color: #333;
+            text-transform: uppercase;
+            transition: color 0.3s ease;
+        }
+
+        .gallery:hover {
+            color: #0f6ec7;
+        }
+
+        /* Image Styling */
+        .image img {
+            width: 100%;
+            height: auto;
+            border-radius: 20px;
+            border: 1px solid #ccc;
+            transition: transform 0.3s ease;
+        }
+
+        .image img:hover {
+
+        }
+
+        /* Container for Previous and Next Buttons */
+        .cont {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+            padding: 0 20px;
+        }
+
+        .first, .second {
+            width: 48%;
+        }
+
+        .first a, .second a {
+            display: block;
+            text-align: center;
+            padding: 10px;
+            background-color: #0f6ec7;
+            color: white;
+            text-decoration: none;
+            border-radius: 20px;
+            font-size: 18px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .first a:hover, .second a:hover {
+            background-color: #007bb5;
+            transform: scale(1.05);
+        }
+
+        .h{
+            font-size: 50px;
+            color: #007bb5;
+            text-decoration: none;
+        }
+    </style>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Image Gallery</title>
+</head>
+<body>
+
+    <!-- Home Button -->
+   <center> <div class="home">
+           <a href="../../../../index.html" class="h">Home</a> 
+    </div>
+
+</center>
+    <!-- Gallery Title -->
+    <p class="gallery">Gallery</p><br><br><br><br><br>
+
+    <!-- Image Section -->
+    <div class="image">
+        <img src="../../../image/background/docter2.jpg" alt="Gallery Image">
+    </div>
+
+    <!-- Navigation (Previous and Next) -->
+    <div class="cont">
+        <div class="first">
+            <a href="docter.html" class="priv">Previous</a>
+        </div>
+        <div class="second">
+            <a href="docter2.html" class="next">Next</a>
+        </div>
+    </div>
+    <br><br><br><br><br>
+</body>
+</html>
